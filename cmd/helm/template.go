@@ -46,7 +46,7 @@ faked locally. Additionally, none of the server-side testing of chart validity
 (e.g. whether an API is supported) is done.
 `
 
-func newTemplateCmd(cfg *action.Configuration, out io.Writer) *cobra.Command {
+func NewTemplateCmd(cfg *action.Configuration, out io.Writer) *cobra.Command {
 	var validate bool
 	var includeCrds bool
 	var skipTests bool

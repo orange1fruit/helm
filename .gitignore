@@ -5,6 +5,7 @@
 .idea/
 .vimrc
 .vscode/
+.go/
 _dist/
 bin/
 vendor/

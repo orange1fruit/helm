@@ -180,7 +180,7 @@ func newRootCmd(actionConfig *action.Configuration, out io.Writer, args []string
 		newReleaseTestCmd(actionConfig, out),
 		newRollbackCmd(actionConfig, out),
 		newStatusCmd(actionConfig, out),
-		newTemplateCmd(actionConfig, out),
+		NewTemplateCmd(actionConfig, out),
 		newUninstallCmd(actionConfig, out),
 		newUpgradeCmd(actionConfig, out),
 
