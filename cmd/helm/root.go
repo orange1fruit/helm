@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package main // import "github.com/orange1fruit/helm/v3/cmd/helm"
+package helm // import "github.com/orange1fruit/helm/v3/cmd/helm"
 
 import (
 	"context"
@@ -180,7 +180,7 @@ func newRootCmd(actionConfig *action.Configuration, out io.Writer, args []string
 		newReleaseTestCmd(actionConfig, out),
 		newRollbackCmd(actionConfig, out),
 		newStatusCmd(actionConfig, out),
-		NewTemplateCmd(actionConfig, out),
+		newTemplateCmd(actionConfig, out),
 		newUninstallCmd(actionConfig, out),
 		newUpgradeCmd(actionConfig, out),
 
