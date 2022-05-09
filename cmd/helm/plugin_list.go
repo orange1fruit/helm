@@ -22,7 +22,7 @@ import (
 	"github.com/gosuri/uitable"
 	"github.com/spf13/cobra"
 
-	"helm.sh/helm/v3/pkg/plugin"
+	"github.com/orange1fruit/helm/v3/pkg/plugin"
 )
 
 func newPluginListCmd(out io.Writer) *cobra.Command {

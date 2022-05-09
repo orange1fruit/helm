@@ -25,12 +25,12 @@ import (
 
 	"github.com/pkg/errors"
 
-	"helm.sh/helm/v3/pkg/chartutil"
-	"helm.sh/helm/v3/pkg/cli"
-	"helm.sh/helm/v3/pkg/downloader"
-	"helm.sh/helm/v3/pkg/getter"
-	"helm.sh/helm/v3/pkg/registry"
-	"helm.sh/helm/v3/pkg/repo"
+	"github.com/orange1fruit/helm/v3/pkg/chartutil"
+	"github.com/orange1fruit/helm/v3/pkg/cli"
+	"github.com/orange1fruit/helm/v3/pkg/downloader"
+	"github.com/orange1fruit/helm/v3/pkg/getter"
+	"github.com/orange1fruit/helm/v3/pkg/registry"
+	"github.com/orange1fruit/helm/v3/pkg/repo"
 )
 
 // Pull is the action for checking a given release's information.

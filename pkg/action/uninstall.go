@@ -22,11 +22,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"helm.sh/helm/v3/pkg/chartutil"
-	"helm.sh/helm/v3/pkg/kube"
-	"helm.sh/helm/v3/pkg/release"
-	"helm.sh/helm/v3/pkg/releaseutil"
-	helmtime "helm.sh/helm/v3/pkg/time"
+	"github.com/orange1fruit/helm/v3/pkg/chartutil"
+	"github.com/orange1fruit/helm/v3/pkg/kube"
+	"github.com/orange1fruit/helm/v3/pkg/release"
+	"github.com/orange1fruit/helm/v3/pkg/releaseutil"
+	helmtime "github.com/orange1fruit/helm/v3/pkg/time"
 )
 
 // Uninstall is the action for uninstalling releases.

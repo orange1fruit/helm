@@ -24,10 +24,10 @@ import (
 	"strings"
 	"testing"
 
-	"helm.sh/helm/v3/internal/test/ensure"
-	"helm.sh/helm/v3/pkg/helmpath"
-	"helm.sh/helm/v3/pkg/repo"
-	"helm.sh/helm/v3/pkg/repo/repotest"
+	"github.com/orange1fruit/helm/v3/internal/test/ensure"
+	"github.com/orange1fruit/helm/v3/pkg/helmpath"
+	"github.com/orange1fruit/helm/v3/pkg/repo"
+	"github.com/orange1fruit/helm/v3/pkg/repo/repotest"
 )
 
 func TestRepoRemove(t *testing.T) {

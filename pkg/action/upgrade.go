@@ -28,13 +28,13 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/cli-runtime/pkg/resource"
 
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/chartutil"
-	"helm.sh/helm/v3/pkg/kube"
-	"helm.sh/helm/v3/pkg/postrender"
-	"helm.sh/helm/v3/pkg/release"
-	"helm.sh/helm/v3/pkg/releaseutil"
-	"helm.sh/helm/v3/pkg/storage/driver"
+	"github.com/orange1fruit/helm/v3/pkg/chart"
+	"github.com/orange1fruit/helm/v3/pkg/chartutil"
+	"github.com/orange1fruit/helm/v3/pkg/kube"
+	"github.com/orange1fruit/helm/v3/pkg/postrender"
+	"github.com/orange1fruit/helm/v3/pkg/release"
+	"github.com/orange1fruit/helm/v3/pkg/releaseutil"
+	"github.com/orange1fruit/helm/v3/pkg/storage/driver"
 )
 
 // Upgrade is the action for upgrading releases.

@@ -20,11 +20,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"helm.sh/helm/v3/internal/test/ensure"
-	"helm.sh/helm/v3/pkg/cli"
-	"helm.sh/helm/v3/pkg/getter"
-	"helm.sh/helm/v3/pkg/repo"
-	"helm.sh/helm/v3/pkg/repo/repotest"
+	"github.com/orange1fruit/helm/v3/internal/test/ensure"
+	"github.com/orange1fruit/helm/v3/pkg/cli"
+	"github.com/orange1fruit/helm/v3/pkg/getter"
+	"github.com/orange1fruit/helm/v3/pkg/repo"
+	"github.com/orange1fruit/helm/v3/pkg/repo/repotest"
 )
 
 const (
