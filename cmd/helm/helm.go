@@ -60,6 +60,7 @@ func GetRoot() *cobra.Command {
 	// It is set here to the full name of "helm" so that renaming of helm to
 	// another name (e.g., helm2 or helm3) does not change the name of the
 	// manager as picked up by the automated name detection.
+
 	kube.ManagedFieldsManager = "helm"
 
 	actionConfig := new(action.Configuration)
