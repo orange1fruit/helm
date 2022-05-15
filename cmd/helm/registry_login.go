@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package main
+package helm
 
 import (
 	"bufio"
@@ -28,8 +28,8 @@ import (
 	"github.com/docker/docker/pkg/term" //nolint
 	"github.com/spf13/cobra"
 
-	"helm.sh/helm/v3/cmd/helm/require"
-	"helm.sh/helm/v3/pkg/action"
+	"github.com/orange1fruit/helm/v3/cmd/helm/require"
+	"github.com/orange1fruit/helm/v3/pkg/action"
 )
 
 const registryLoginDesc = `

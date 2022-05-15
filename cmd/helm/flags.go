@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package main
+package helm
 
 import (
 	"flag"
@@ -28,12 +28,12 @@ import (
 	"github.com/spf13/pflag"
 	"k8s.io/klog/v2"
 
-	"helm.sh/helm/v3/pkg/action"
-	"helm.sh/helm/v3/pkg/cli/output"
-	"helm.sh/helm/v3/pkg/cli/values"
-	"helm.sh/helm/v3/pkg/helmpath"
-	"helm.sh/helm/v3/pkg/postrender"
-	"helm.sh/helm/v3/pkg/repo"
+	"github.com/orange1fruit/helm/v3/pkg/action"
+	"github.com/orange1fruit/helm/v3/pkg/cli/output"
+	"github.com/orange1fruit/helm/v3/pkg/cli/values"
+	"github.com/orange1fruit/helm/v3/pkg/helmpath"
+	"github.com/orange1fruit/helm/v3/pkg/postrender"
+	"github.com/orange1fruit/helm/v3/pkg/repo"
 )
 
 const outputFlag = "output"

@@ -14,15 +14,15 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package main
+package helm
 
 import (
 	"fmt"
 	"testing"
 
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/release"
-	helmtime "helm.sh/helm/v3/pkg/time"
+	"github.com/orange1fruit/helm/v3/pkg/chart"
+	"github.com/orange1fruit/helm/v3/pkg/release"
+	helmtime "github.com/orange1fruit/helm/v3/pkg/time"
 )
 
 func outputFlagCompletionTest(t *testing.T, cmdName string) {

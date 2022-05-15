@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package main // import "helm.sh/helm/v3/cmd/helm"
+package helm // import "github.com/orange1fruit/helm/v3/cmd/helm"
 
 import (
 	"fmt"
@@ -29,12 +29,12 @@ import (
 	// Import to initialize client auth plugins.
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 
-	"helm.sh/helm/v3/pkg/action"
-	"helm.sh/helm/v3/pkg/cli"
-	"helm.sh/helm/v3/pkg/kube"
-	kubefake "helm.sh/helm/v3/pkg/kube/fake"
-	"helm.sh/helm/v3/pkg/release"
-	"helm.sh/helm/v3/pkg/storage/driver"
+	"github.com/orange1fruit/helm/v3/pkg/action"
+	"github.com/orange1fruit/helm/v3/pkg/cli"
+	"github.com/orange1fruit/helm/v3/pkg/kube"
+	kubefake "github.com/orange1fruit/helm/v3/pkg/kube/fake"
+	"github.com/orange1fruit/helm/v3/pkg/release"
+	"github.com/orange1fruit/helm/v3/pkg/storage/driver"
 )
 
 var settings = cli.New()
@@ -55,11 +55,12 @@ func warning(format string, v ...interface{}) {
 	fmt.Fprintf(os.Stderr, format, v...)
 }
 
-func main() {
+func GetRoot() *cobra.Command {
 	// Setting the name of the app for managedFields in the Kubernetes client.
 	// It is set here to the full name of "helm" so that renaming of helm to
 	// another name (e.g., helm2 or helm3) does not change the name of the
 	// manager as picked up by the automated name detection.
+
 	kube.ManagedFieldsManager = "helm"
 
 	actionConfig := new(action.Configuration)
@@ -79,16 +80,7 @@ func main() {
 			loadReleasesInMemory(actionConfig)
 		}
 	})
-
-	if err := cmd.Execute(); err != nil {
-		debug("%+v", err)
-		switch e := err.(type) {
-		case pluginError:
-			os.Exit(e.code)
-		default:
-			os.Exit(1)
-		}
-	}
+	return cmd
 }
 
 // This function loads releases into the memory storage if the

@@ -34,16 +34,16 @@ import (
 	"github.com/pkg/errors"
 	"sigs.k8s.io/yaml"
 
-	"helm.sh/helm/v3/internal/resolver"
-	"helm.sh/helm/v3/internal/third_party/dep/fs"
-	"helm.sh/helm/v3/internal/urlutil"
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/chart/loader"
-	"helm.sh/helm/v3/pkg/chartutil"
-	"helm.sh/helm/v3/pkg/getter"
-	"helm.sh/helm/v3/pkg/helmpath"
-	"helm.sh/helm/v3/pkg/registry"
-	"helm.sh/helm/v3/pkg/repo"
+	"github.com/orange1fruit/helm/v3/internal/resolver"
+	"github.com/orange1fruit/helm/v3/internal/third_party/dep/fs"
+	"github.com/orange1fruit/helm/v3/internal/urlutil"
+	"github.com/orange1fruit/helm/v3/pkg/chart"
+	"github.com/orange1fruit/helm/v3/pkg/chart/loader"
+	"github.com/orange1fruit/helm/v3/pkg/chartutil"
+	"github.com/orange1fruit/helm/v3/pkg/getter"
+	"github.com/orange1fruit/helm/v3/pkg/helmpath"
+	"github.com/orange1fruit/helm/v3/pkg/registry"
+	"github.com/orange1fruit/helm/v3/pkg/repo"
 )
 
 // ErrRepoNotFound indicates that chart repositories can't be found in local repo cache.

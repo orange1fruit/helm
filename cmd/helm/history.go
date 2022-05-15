@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package main
+package helm
 
 import (
 	"fmt"
@@ -25,13 +25,13 @@ import (
 	"github.com/gosuri/uitable"
 	"github.com/spf13/cobra"
 
-	"helm.sh/helm/v3/cmd/helm/require"
-	"helm.sh/helm/v3/pkg/action"
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/cli/output"
-	"helm.sh/helm/v3/pkg/release"
-	"helm.sh/helm/v3/pkg/releaseutil"
-	helmtime "helm.sh/helm/v3/pkg/time"
+	"github.com/orange1fruit/helm/v3/cmd/helm/require"
+	"github.com/orange1fruit/helm/v3/pkg/action"
+	"github.com/orange1fruit/helm/v3/pkg/chart"
+	"github.com/orange1fruit/helm/v3/pkg/cli/output"
+	"github.com/orange1fruit/helm/v3/pkg/release"
+	"github.com/orange1fruit/helm/v3/pkg/releaseutil"
+	helmtime "github.com/orange1fruit/helm/v3/pkg/time"
 )
 
 var historyHelp = `

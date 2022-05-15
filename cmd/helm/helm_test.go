@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package main
+package helm
 
 import (
 	"bytes"
@@ -28,15 +28,15 @@ import (
 	shellwords "github.com/mattn/go-shellwords"
 	"github.com/spf13/cobra"
 
-	"helm.sh/helm/v3/internal/test"
-	"helm.sh/helm/v3/pkg/action"
-	"helm.sh/helm/v3/pkg/chartutil"
-	"helm.sh/helm/v3/pkg/cli"
-	kubefake "helm.sh/helm/v3/pkg/kube/fake"
-	"helm.sh/helm/v3/pkg/release"
-	"helm.sh/helm/v3/pkg/storage"
-	"helm.sh/helm/v3/pkg/storage/driver"
-	"helm.sh/helm/v3/pkg/time"
+	"github.com/orange1fruit/helm/v3/internal/test"
+	"github.com/orange1fruit/helm/v3/pkg/action"
+	"github.com/orange1fruit/helm/v3/pkg/chartutil"
+	"github.com/orange1fruit/helm/v3/pkg/cli"
+	kubefake "github.com/orange1fruit/helm/v3/pkg/kube/fake"
+	"github.com/orange1fruit/helm/v3/pkg/release"
+	"github.com/orange1fruit/helm/v3/pkg/storage"
+	"github.com/orange1fruit/helm/v3/pkg/storage/driver"
+	"github.com/orange1fruit/helm/v3/pkg/time"
 )
 
 func testTimestamper() time.Time { return time.Unix(242085845, 0).UTC() }

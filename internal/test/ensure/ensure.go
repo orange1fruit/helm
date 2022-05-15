@@ -22,8 +22,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"helm.sh/helm/v3/pkg/helmpath"
-	"helm.sh/helm/v3/pkg/helmpath/xdg"
+	"github.com/orange1fruit/helm/v3/pkg/helmpath"
+	"github.com/orange1fruit/helm/v3/pkg/helmpath/xdg"
 )
 
 // HelmHome sets up a Helm Home in a temp dir.

@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package main
+package helm
 
 import (
 	"fmt"
@@ -26,9 +26,9 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
-	"helm.sh/helm/v3/pkg/action"
-	"helm.sh/helm/v3/pkg/cli/values"
-	"helm.sh/helm/v3/pkg/getter"
+	"github.com/orange1fruit/helm/v3/pkg/action"
+	"github.com/orange1fruit/helm/v3/pkg/cli/values"
+	"github.com/orange1fruit/helm/v3/pkg/getter"
 )
 
 var longLintHelp = `
